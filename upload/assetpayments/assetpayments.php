@@ -172,6 +172,7 @@ function assetpayments_woocommerce_init() {
 					"ProductId" => '12345',
 					"ProductName" => 'Delivery method: ' . ' ' . $orderdata->get_shipping_method(),
 					"ProductPrice" => $orderdata->get_shipping_total(),
+					"ImageUrl" => 'https://assetpayments.com/dist/css/images/delivery.png',
 					"ProductItemsNum" => 1,
 				);	
 		
