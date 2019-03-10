@@ -39,4 +39,4 @@ Alternatively you can just upload the upload directory content to wp-content/plu
 ### Проблемы при установке
 Если ваша хостинговая компания не предоставляет FTP доступ, то вам будет необходимо установить этот модуль прежде чем устанавливать данный модуль оплаты.
 
-Другой вариант - это закачать на сервер содержимое папки upload в wp-content/plugins/ directory.
+Другой вариант - это закачать на сервер содержимое папки upload в директорию wp-content/plugins/.
