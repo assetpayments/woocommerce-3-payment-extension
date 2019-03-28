@@ -20,6 +20,10 @@ If you hosting service doesn't provide a FTP access, most probably you will have
 
 Alternatively you can just upload the upload directory content to wp-content/plugins/ directory.
 
+In you see this message 'AssetPayments does not support your shop currency.' - check currency settings in 
+WooCommerce -> Settings -> Main -> Currency settings -> Currency
+AssetPayments extension supports USD, EUR, UAH, RUB and KZT by default. Change currency settings or add currency code to assetpayments.php (line 21). 
+
 ## Модуль оплаты WooCommerce 3
 
 ### Установка
@@ -40,3 +44,5 @@ Alternatively you can just upload the upload directory content to wp-content/plu
 Если ваша хостинговая компания не предоставляет FTP доступ, то вам будет необходимо установить этот модуль прежде чем устанавливать данный модуль оплаты.
 
 Другой вариант - это закачать на сервер содержимое папки upload в директорию wp-content/plugins/.
+
+Если при установке модуля показывается сообщение "AssetPayments не поддерживает валюты Вашего магазина." - измените настройки валюты в WooCommerce -> Settings -> Main -> Currency settings -> Currency на EUR, RUB, ISD, UAH, KZT, или добавьте свой код валюты в файле assetpayments.php (строка 21)
