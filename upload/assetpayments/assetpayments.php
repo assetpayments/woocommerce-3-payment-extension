@@ -197,6 +197,9 @@ function assetpayments_woocommerce_init() {
 			global $wp_version;
 			$wordpress_version = $wp_version;
 			$send_version = 'Wordpress : '.$wordpress_version.' - '.$plugin_name.' : '.$plugin_version;
+		
+			//****Phone number fix****//
+			$phone = preg_replace('/[^\d]+/', '', $orderdata->get_billing_phone());
 				
 			$request = $this->cnb_form(array(
                 'TemplateId' => intval($this->template_id),
@@ -206,7 +209,7 @@ function assetpayments_woocommerce_init() {
 				'FirstName' => $orderdata->get_billing_first_name(),
 				'LastName' => $orderdata->get_billing_last_name(),
 				'Email' => $orderdata->get_billing_email(),
-				'Phone' => $orderdata->get_billing_phone(),           
+				'Phone' => $phone,           
 				'Address' => $address,           
 				'CountryISO' => $country, 
 				'Amount' => $orderdata->get_total(),
