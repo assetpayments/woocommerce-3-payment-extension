@@ -242,8 +242,8 @@ function assetpayments_woocommerce_init() {
 		 global $woocommerce;
 		$json = json_decode(file_get_contents('php://input'), true);
 
-		$key = $this->public_key;
-		$secret = $this->private_key;
+		$key = mb_strtolower($this->public_key);
+		$secret = mb_strtolower($this->private_key);
 		$transactionId = $json['Payment']['TransactionId'];
 		$signature = $json['Payment']['Signature'];
 		$order_id = $json['Order']['OrderId'];
