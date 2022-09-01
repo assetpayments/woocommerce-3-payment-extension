@@ -1,4 +1,4 @@
-## woocommerce-3-payment-module
+## woocommerce-6-payment-module
 
 ### Installation
 
@@ -13,7 +13,7 @@
   * Enabled the module
   
 ### Notes
-Tested and developed with Wordpress 5.1 WooCommerce 3.5.5 
+Tested and developed with Wordpress 5.9 WooCommerce 6.8.1 
 
 ### Troubleshooting
 If you hosting service doesn't provide a FTP access, most probably you will have to install the extension before to install the payment module.
@@ -24,7 +24,7 @@ In you see this message 'AssetPayments does not support your shop currency.' - c
 WooCommerce -> Settings -> Main -> Currency settings -> Currency
 AssetPayments extension supports USD, EUR, UAH, RUB and KZT by default. Change currency settings or add currency code to assetpayments.php (line 21). 
 
-## Модуль оплаты WooCommerce 3
+## Модуль оплаты WooCommerce 6
 
 ### Установка
 * Создайте резервную копию вашего магазина и базы данных
@@ -38,7 +38,7 @@ AssetPayments extension supports USD, EUR, UAH, RUB and KZT by default. Change c
   * Включите модуль
 
 ### Примечания
-Разработано и протестировано с Wordpress 5.1 WooCommerce 3.5.5 
+Разработано и протестировано с Wordpress 5.9 WooCommerce 6.8.1 
 
 ### Проблемы при установке
 Если ваша хостинговая компания не предоставляет FTP доступ, то вам будет необходимо установить этот модуль прежде чем устанавливать данный модуль оплаты.
