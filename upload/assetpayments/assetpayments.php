@@ -216,7 +216,7 @@ function assetpayments_woocommerce_init() {
 				'Currency' =>$currency,
 				'AssetPaymentsKey' => $this->public_key,
 				'IpAddress' => $orderdata->get_customer_ip_address(),
-				'CustomMerchantInfo' => $send_version,
+				'CustomMerchantInfo' => $orderdata->get_id(),
 				'Products' => $request_cart['Products']
             ));
             return $request;
