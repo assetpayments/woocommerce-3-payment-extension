@@ -230,10 +230,15 @@ function assetpayments_woocommerce_init() {
 			
             $data      = base64_encode( json_encode($params) );
             return sprintf('
-            <form method="POST" action="https://assetpayments.us/checkout/pay" accept-charset="utf-8">
+            <form id="checkout" method="POST" action="https://assetpayments.us/checkout/pay" accept-charset="utf-8">
                 <input type="hidden" name="data" value='.$data.' />
                 <input type="submit" value="Submit payment" class="btn btn-primary" />
-            </form>'
+            </form>
+	    <script type="text/javascript">
+                  jQuery(function() {
+                    jQuery("#checkout").submit();
+                  })
+                </script>'
             );
         }
 
